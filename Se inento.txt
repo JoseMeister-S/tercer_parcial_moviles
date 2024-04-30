@@ -1,0 +1,1 @@
+No logro que el init app funcione bien, el entorno deberia estar bien.
