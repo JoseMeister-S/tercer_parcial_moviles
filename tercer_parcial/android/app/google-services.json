@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044464958375",
+    "project_id": "tercer-parcial-redo",
+    "storage_bucket": "tercer-parcial-redo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044464958375:android:50e7c0d58bde1223d05482",
+        "android_client_info": {
+          "package_name": "com.example.tercer_parcial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwySvENIDoxdqhbYqoQ3Ry54l0uOX-VMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
