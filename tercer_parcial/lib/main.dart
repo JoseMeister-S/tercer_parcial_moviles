@@ -1,24 +1,27 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:tercer_parcial/api/firebase_api.dart';
+import 'package:tercer_parcial/services/firebase_service.dart';
+import 'package:tercer_parcial/services/messaging_service.dart';
+import 'package:tercer_parcial/services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  FirebaseApi firebaseApi = FirebaseApi();
-  await firebaseApi.initNotifications();
-  runApp(const MainApp());
+
+  await FirebaseService.initializeFirebase();
+
+  NotificationService.initializeNotifications();
+  MessagingService.setupFirebaseMessaging();
+
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: 'Tercer parcial',
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text('Ojala Funcione!'),
         ),
       ),
     );
